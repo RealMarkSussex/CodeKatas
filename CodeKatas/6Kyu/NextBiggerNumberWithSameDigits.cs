@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Linq;
 
-namespace CodeKatas
+namespace CodeKatas._6Kyu
 {
     class NextBiggerNumberWithSameDigits
     {

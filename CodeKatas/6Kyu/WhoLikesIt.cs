@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace CodeKatas
+﻿namespace CodeKatas._6Kyu
 {
     class WhoLikesIt
     {
