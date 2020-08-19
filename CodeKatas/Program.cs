@@ -19,7 +19,7 @@ namespace CodeKatas
             PrintPickPeaks(plateauPeak, "Test case with a plateau that is a peak");
             PrintPickPeaks(plateauNoPeak, "Test case that is a plateau that is not a peak");
             Console.WriteLine(PrimesInNumbers.Factors(7775460));
-            Console.WriteLine(SquareIntoSquares.Decompose(11));
+            Console.WriteLine(IntegersRecreationOne.ListSquared(1, 250));
         }
 
         private static void PrintPickPeaks(Dictionary<string, List<int>> result, string testCase)
