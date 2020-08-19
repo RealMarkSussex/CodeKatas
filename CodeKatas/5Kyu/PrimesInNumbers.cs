@@ -15,19 +15,6 @@ namespace CodeKatas._5Kyu
             {
                 return $"({lst})";
             }
-            //for (var i = 2; i <= Math.Sqrt(lst); i++)
-            //{
-            //    if (IsPrime(i) && currentNum % i == 0)
-            //    {
-            //        currentNum /= i;
-            //        numsAndPowers.Add(i, 1);
-            //        while (currentNum % i == 0)
-            //        {
-            //            currentNum /= i;
-            //            numsAndPowers[i]++;
-            //        }
-            //    }
-            //}
 
             var i = 2;
             while (currentNum > 1)
