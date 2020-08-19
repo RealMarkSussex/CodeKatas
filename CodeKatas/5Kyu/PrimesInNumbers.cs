@@ -11,11 +11,6 @@ namespace CodeKatas._5Kyu
         {
             var currentNum = lst;
             var numsAndPowers = new Dictionary<int, int>();
-            if (IsPrime(lst))
-            {
-                return $"({lst})";
-            }
-
             var i = 2;
             while (currentNum > 1)
             {
