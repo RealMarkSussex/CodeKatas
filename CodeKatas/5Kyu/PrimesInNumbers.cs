@@ -11,7 +11,26 @@ namespace CodeKatas._5Kyu
         {
             var currentNum = lst;
             var numsAndPowers = new Dictionary<int, int>();
-            for (var i = 2; i <= Math.Sqrt(lst); i++)
+            if (IsPrime(lst))
+            {
+                return $"({lst})";
+            }
+            //for (var i = 2; i <= Math.Sqrt(lst); i++)
+            //{
+            //    if (IsPrime(i) && currentNum % i == 0)
+            //    {
+            //        currentNum /= i;
+            //        numsAndPowers.Add(i, 1);
+            //        while (currentNum % i == 0)
+            //        {
+            //            currentNum /= i;
+            //            numsAndPowers[i]++;
+            //        }
+            //    }
+            //}
+
+            var i = 2;
+            while (currentNum > 1)
             {
                 if (IsPrime(i) && currentNum % i == 0)
                 {
@@ -23,22 +42,9 @@ namespace CodeKatas._5Kyu
                         numsAndPowers[i]++;
                     }
                 }
+
+                i++;
             }
-
-            //var numsAndPowers = primeFactors.ToDictionary(primeFactor => primeFactor, primeFactor => 1);
-
-            //while (currentNum > 1)
-            //{
-            //    for (var index = 0; index < primeFactors.Count; index++)
-            //    {
-            //        var primeFactor = primeFactors[index];
-            //        if (currentNum % primeFactor == 0)
-            //        {
-            //            currentNum /= primeFactor;
-            //            numsAndPowers[primeFactor]++;
-            //        }
-            //    }
-            //}
 
             var result = "";
             foreach (var (key, value) in numsAndPowers)
