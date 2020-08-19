@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 
-namespace CodeKatas._6Kyu
+namespace CodeKatas._5Kyu
 {
     class MaximumSubArraySum
     {

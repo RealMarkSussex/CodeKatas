@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Linq;
 
-namespace CodeKatas._6Kyu
+namespace CodeKatas._7Kyu
 {
     class HighestAndLowest
     {

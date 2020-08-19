@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace CodeKatas._6Kyu
+namespace CodeKatas._7Kyu
 {
     class BinaryAddition
     {
