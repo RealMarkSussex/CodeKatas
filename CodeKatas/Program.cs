@@ -22,6 +22,18 @@ namespace CodeKatas
             Console.WriteLine(IntegersRecreationOne.ListSquared(1, 250));
             Console.WriteLine(MatrixDeterminant.Determinant(new int[][] { new[] { 1, 3, 5, 9 }, new[] { 1, 3, 1, 7 }, new[] { 4, 3, 9, 7 }, new []{ 5, 2, 0, 9} }));
             Console.WriteLine(MatrixDeterminant.Determinant(new int[][] { new[] { 2, 5, 3 }, new[] { 1, -2, -1 }, new[] { 1, 3, 4 } }));
+            //var snailSort = SnailSort.Snail(new int[][]
+            //{
+            //    new[] {1, 2, 3},
+            //    new[] {4, 5, 6},
+            //    new[] {7, 8, 9}
+            //});
+            var snailSort = SnailSort.Snail(new int[0][]);
+            Console.WriteLine();
+            foreach (var num in snailSort)
+            {
+                Console.Write(num + " ");
+            }
         }
 
         private static void PrintPickPeaks(Dictionary<string, List<int>> result, string testCase)
